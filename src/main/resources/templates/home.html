@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto temporibus, itaque praesentium error sed tenetur qui tempora, ipsam doloremque incidunt iste. Laboriosam ratione alias impedit similique minus aut est maiores!</p>
+    <span data-th-text="${currTime}"></span>
+    <div data-th-if="${currHour lt 12}"> 
+        <h3>Good Morning</h3> 
+    </div>
+    <div th:if="${currHour ge 12}">
+        <h3>Good Afternoon</h3>
+    </div>
+</body>
+</html>
